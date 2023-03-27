@@ -77,8 +77,8 @@ print('Looping all names to get name history')
 name_history = []
 for name in updates:
 
-  if updates[name][-1][0] < maxblock - 30000:
-    #last update more than 30k blocks ago -> dismiss
+  if updates[name][-1][0] < maxblock - 36000:
+    #last update more than 36k blocks ago == expired -> dismiss
     continue
     
   after_threshold = False

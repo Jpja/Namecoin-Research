@@ -2,7 +2,7 @@ import os
 os.chdir(os.path.dirname(__file__))
 
 import csv
-file = open("active_names_2023_03_24.csv", "r")
+file = open("active_names_2023_03_27.csv", "r")
 data = list(csv.reader(file, delimiter=","))
 file.close()
 
